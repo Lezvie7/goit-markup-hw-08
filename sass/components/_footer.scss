@@ -1,0 +1,127 @@
+.footer-web {
+  color: var(--current-color);
+  font-size: 26px;
+  line-height: 1.2;
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-studio {
+  color: var(--main-light-color);
+  font-size: 26px;
+  line-height: 1.2;
+  font-family: 'Raleway', sans-serif;
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--current-color);
+  }
+}
+
+.footer {
+  background: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-info {
+  color: var(--footer-info-color);
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--current-color);
+  }
+}
+
+.footer-item {
+  margin-bottom: 9px;
+}
+
+.title-footer {
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--main-light-color);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer-submit {
+  display: block;
+  background-color: var(--hero-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  transition-property: border-color;
+  transition: var(--transition-dur-and-func);
+
+  &:focus {
+    outline: none;
+    border-color: var(--current-color);
+  }
+}
+
+.footer-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  background-color: var(--current-color);
+  color: var(--main-light-color);
+  border-radius: 4px;
+  transition: var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-hero-bg-color);
+    box-shadow: 0px 4px 4px var(--hero-shadow-button-color);
+    border-radius: 4px;
+  }
+}
+
+.footer-submit-btn-icon {
+  margin-left: 10px;
+}
+
+.footer-container-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-submit-email {
+  display: flex;
+  gap: 12px;
+}
+
+.link-address {
+  color: var(--main-light-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--current-color);
+  }
+}

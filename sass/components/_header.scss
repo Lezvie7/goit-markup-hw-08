@@ -1,0 +1,120 @@
+.button-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.contacts-header {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.header-studio {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: var(--main-color);
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--current-color);
+  }
+}
+
+.header-border {
+  border-bottom: 1px solid var(--header-border);
+}
+
+.header-web {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: var(--current-color);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--secondary-color);
+  letter-spacing: 0.02em;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  /* padding для кликабельности */
+  fill: currentColor;
+  transition: color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    color: var(--current-color);
+  }
+}
+
+.header-info-icon {
+  margin-right: 10px;
+}
+
+.list-header {
+  position: relative;
+
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* padding для кликабельности */
+  transition: color var(--transition-dur-and-func);
+  
+&:hover,
+&:focus {
+  background-color: var(--current-color);
+  color: var(--current-color);
+
+  background-color: var(--main-light-color);
+}
+}
+
+
+.contacts-header .item + .item {
+  margin-left: 50px;
+}
+
+.current-studio::before,
+.current-portfolio::before {
+  position: absolute;
+
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--current-color);
+  border-radius: 2px;
+}
+
+.current-studio,
+.current-portfolio {
+  color: var(--current-color);
+}
+
+
+
+
+
