@@ -18,43 +18,111 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header-border">
+    <header class="header">
       <!-- Навигация сайта. -->
-      <div class="container nav-container">
-        <nav class="nav-container">
-          <a href="./index.html" class="header-web"
-            >Web<span class="header-studio">Studio</span></a
-          >
-          <ul class="button-nav">
-            <li><a class="list-header" href="./index.html">Студія</a></li>
+      <div class="container header__container">
+        <nav class="header__container">
+          <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span></a>
+          <ul class="menu-list">
             <li>
-              <a class="list-header current-portfolio" href="./portfolio.html"
-                >Портфоліо</a
-              >
+              <a class="menu-list__link" href="./index.html">Студія</a>
             </li>
             <li>
-              <a class="list-header" href="./index.html">Контакти</a>
+              <a class="menu-list__link current-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li>
+              <a class="menu-list__link" href="./index.html">Контакти</a>
             </li>
           </ul>
         </nav>
 
+        <button
+          class="header__btn menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="header__icon-menu" href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+
         <!-- Контакты. -->
-        <ul class="contacts-header">
-          <li class="item">
-            <a class="header-info" href="mailto:info@devstudio.com"
-              ><svg class="header-info-icon" height="12" width="16">
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <a class="contacts-list__link" href="mailto:info@devstudio.com"
+              ><svg class="contacts-list__icon" height="12" width="16">
                 <use href="./images/sprite.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a class="header-info" href="tel:+380961111111"
-              ><svg class="header-info-icon" height="16" width="10">
+          <li class="contacts-list__item">
+            <a class="contacts-list__link" href="tel:+380961111111"
+              ><svg class="contacts-list__icon" height="16" width="10">
                 <use href="./images/sprite.svg#icon-phone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn js-close-menu">
+            <svg class="mobile-menu__close-icon" height="40" width="40">
+              <use href="/images/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="mobile-nav">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link mobile-nav__link--current" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Контакти</a></li>
+          </ul>
+          <ul class="mobile-contact">
+            <li class="mobile-contact__item">
+              <a class="mobile-contact__link mobile-contact__link--indent" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contact__item">
+              <a class="mobile-contact__link" href="malito:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="mobail-social__item">
+              <a
+                class="mobile-social__link mobile-social__link--after"
+                aria-label="instagram"
+                href="#"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobail-social__item">
+              <a
+                class="mobile-social__link mobile-social__link--after"
+                aria-label="twitter"
+                href="#"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobail-social__item">
+              <a
+                class="mobile-social__link mobile-social__link--after"
+                aria-label="facebook"
+                href="#"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobail-social__item">
+              <a class="mobile-social__link" aria-label="linkedin" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -69,24 +137,16 @@
               <button class="button button-section" type="button">Усі</button>
             </li>
             <li>
-              <button class="button button-section" type="button">
-                Веб-сайти
-              </button>
+              <button class="button button-section" type="button">Веб-сайти</button>
             </li>
             <li>
-              <button class="button button-section" type="button">
-                Додатки
-              </button>
+              <button class="button button-section" type="button">Додатки</button>
             </li>
             <li>
-              <button class="button button-section" type="button">
-                Дизайн
-              </button>
+              <button class="button button-section" type="button">Дизайн</button>
             </li>
             <li>
-              <button class="button button-section" type="button">
-                Маркетинг
-              </button>
+              <button class="button button-section" type="button">Маркетинг</button>
             </li>
           </ul>
 
@@ -112,18 +172,12 @@
                     />
 
                     <source
-                      srcset="
-                        ./images/tablet/pf1.webp    1x,
-                        ./images/tablet/pf1@2x.webp 2x
-                      "
+                      srcset="./images/tablet/pf1.webp 1x, ./images/tablet/pf1@2x.webp 2x"
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
                     <source
-                      srcset="
-                        ./images/tablet/pf1.jpg    1x,
-                        ./images/tablet/pf1@2x.jpg 2x
-                      "
+                      srcset="./images/tablet/pf1.jpg 1x, ./images/tablet/pf1@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
 
@@ -143,15 +197,12 @@
                       media="(max-width: 767px)"
                     />
 
-                    <img
-                      src="./images/mobiles/portfolio-1.jpg"
-                      alt="portfolio-desktop"
-                    />
+                    <img src="./images/mobiles/portfolio-1.jpg" alt="portfolio-desktop" />
                   </picture>
                   <p class="gallery-overley-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="gallery-box">
@@ -181,18 +232,12 @@
                     />
 
                     <source
-                      srcset="
-                        ./images/tablet/pf2.webp    1x,
-                        ./images/tablet/pf2@2x.webp 2x
-                      "
+                      srcset="./images/tablet/pf2.webp 1x, ./images/tablet/pf2@2x.webp 2x"
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
                     <source
-                      srcset="
-                        ./images/tablet/pf2.jpg    1x,
-                        ./images/tablet/pf2@2x.jpg 2x
-                      "
+                      srcset="./images/tablet/pf2.jpg 1x, ./images/tablet/pf2@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
 
@@ -212,15 +257,12 @@
                       media="(max-width: 767px)"
                     />
 
-                    <img
-                      src="./images/mobiles/portfolio-2.jpg"
-                      alt="new-orlean"
-                    />
+                    <img src="./images/mobiles/portfolio-2.jpg" alt="new-orlean" />
                   </picture>
                   <p class="gallery-overley-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="gallery-box">
@@ -251,18 +293,12 @@
                     />
 
                     <source
-                      srcset="
-                        ./images/tablet/pf3.webp    1x,
-                        ./images/tablet/pf3@2x.webp 2x
-                      "
+                      srcset="./images/tablet/pf3.webp 1x, ./images/tablet/pf3@2x.webp 2x"
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
                     <source
-                      srcset="
-                        ./images/tablet/pf3.jpg    1x,
-                        ./images/tablet/pf3@2x.jpg 2x
-                      "
+                      srcset="./images/tablet/pf3.jpg 1x, ./images/tablet/pf3@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
 
@@ -282,15 +318,12 @@
                       media="(max-width: 767px)"
                     />
 
-                    <img
-                      src="./images/mobiles/portfolio-3.jpg"
-                      alt="restaurant"
-                    />
+                    <img src="./images/mobiles/portfolio-3.jpg" alt="restaurant" />
                   </picture>
                   <p class="gallery-overley-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="gallery-box">
@@ -321,18 +354,12 @@
                     />
 
                     <source
-                      srcset="
-                        ./images/tablet/pf4.webp    1x,
-                        ./images/tablet/pf4@2x.webp 2x
-                      "
+                      srcset="./images/tablet/pf4.webp 1x, ./images/tablet/pf4@2x.webp 2x"
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
                     <source
-                      srcset="
-                        ./images/tablet/pf4.jpg    1x,
-                        ./images/tablet/pf4@2x.jpg 2x
-                      "
+                      srcset="./images/tablet/pf4.jpg 1x, ./images/tablet/pf4@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
 
@@ -355,9 +382,9 @@
                     <img src="./images/mobiles/portfolio-4.jpg " alt="prime" />
                   </picture>
                   <p class="gallery-overley-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="gallery-box">
@@ -388,18 +415,12 @@
                     />
 
                     <source
-                      srcset="
-                        ./images/tablet/pf5.webp    1x,
-                        ./images/tablet/pf5@2x.webp 2x
-                      "
+                      srcset="./images/tablet/pf5.webp 1x, ./images/tablet/pf5@2x.webp 2x"
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
                     <source
-                      srcset="
-                        ./images/tablet/pf5.jpg    1x,
-                        ./images/tablet/pf5@2x.jpg 2x
-                      "
+                      srcset="./images/tablet/pf5.jpg 1x, ./images/tablet/pf5@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
 
@@ -422,9 +443,9 @@
                     <img src="./images/mobiles/portfolio-1.jpg" alt="boxes" />
                   </picture>
                   <p class="gallery-overley-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="gallery-box">
@@ -455,18 +476,12 @@
                     />
 
                     <source
-                      srcset="
-                        ./images/tablet/pf6.webp    1x,
-                        ./images/tablet/pf6@2x.webp 2x
-                      "
+                      srcset="./images/tablet/pf6.webp 1x, ./images/tablet/pf6@2x.webp 2x"
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
                     <source
-                      srcset="
-                        ./images/tablet/pf6.jpg    1x,
-                        ./images/tablet/pf6@2x.jpg 2x
-                      "
+                      srcset="./images/tablet/pf6.jpg 1x, ./images/tablet/pf6@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
 
@@ -489,9 +504,9 @@
                     <img src="./images/mobiles/portfolio-6.jpg" alt="pc" />
                   </picture>
                   <p class="gallery-overley-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="gallery-box">
@@ -522,18 +537,12 @@
                     />
 
                     <source
-                      srcset="
-                        ./images/tablet/pf7.webp    1x,
-                        ./images/tablet/pf7@2x.webp 2x
-                      "
+                      srcset="./images/tablet/pf7.webp 1x, ./images/tablet/pf7@2x.webp 2x"
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
                     <source
-                      srcset="
-                        ./images/tablet/pf7.jpg    1x,
-                        ./images/tablet/pf7@2x.jpg 2x
-                      "
+                      srcset="./images/tablet/pf7.jpg 1x, ./images/tablet/pf7@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
 
@@ -553,15 +562,12 @@
                       media="(max-width: 767px)"
                     />
 
-                    <img
-                      src="./images/mobiles/portfolio-7.jpg"
-                      alt="limited-edition"
-                    />
+                    <img src="./images/mobiles/portfolio-7.jpg" alt="limited-edition" />
                   </picture>
                   <p class="gallery-overley-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="gallery-box">
@@ -592,18 +598,12 @@
                     />
 
                     <source
-                      srcset="
-                        ./images/tablet/pf8.webp    1x,
-                        ./images/tablet/pf8@2x.webp 2x
-                      "
+                      srcset="./images/tablet/pf8.webp 1x, ./images/tablet/pf8@2x.webp 2x"
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
                     <source
-                      srcset="
-                        ./images/tablet/pf8.jpg    1x,
-                        ./images/tablet/pf8@2x.jpg 2x
-                      "
+                      srcset="./images/tablet/pf8.jpg 1x, ./images/tablet/pf8@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
 
@@ -626,9 +626,9 @@
                     <img src="./images/mobiles/portfolio-8.jpg" alt="lab" />
                   </picture>
                   <p class="gallery-overley-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="gallery-box">
@@ -659,18 +659,12 @@
                     />
 
                     <source
-                      srcset="
-                        ./images/tablet/pf9.webp    1x,
-                        ./images/tablet/pf9@2x.webp 2x
-                      "
+                      srcset="./images/tablet/pf9.webp 1x, ./images/tablet/pf9@2x.webp 2x"
                       media="(min-width: 768px)"
                       type="image/webp"
                     />
                     <source
-                      srcset="
-                        ./images/tablet/pf9.jpg    1x,
-                        ./images/tablet/pf9@2x.jpg 2x
-                      "
+                      srcset="./images/tablet/pf9.jpg 1x, ./images/tablet/pf9@2x.jpg 2x"
                       media="(min-width: 768px)"
                     />
 
@@ -690,15 +684,12 @@
                       media="(max-width: 767px)"
                     />
 
-                    <img
-                      src="./images/mobiles/portfolio-9.jpg"
-                      alt="application"
-                    />
+                    <img src="./images/mobiles/portfolio-9.jpg" alt="application" />
                   </picture>
                   <p class="gallery-overley-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
                   </p>
                 </div>
                 <div class="gallery-box">
@@ -715,9 +706,7 @@
     <footer class="footer">
       <div class="container footer-container-box">
         <div class="footer-address-box">
-          <a href="./index.html" class="footer-web"
-            >Web<span class="footer-studio">Studio</span></a
-          >
+          <a href="./index.html" class="footer-web">Web<span class="footer-studio">Studio</span></a>
           <address>
             <ul>
               <li class="footer-item">
@@ -730,14 +719,10 @@
                 >
               </li>
               <li class="footer-item">
-                <a class="footer-info" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+                <a class="footer-info" href="mailto:info@example.com">info@example.com</a>
               </li>
               <li>
-                <a class="footer-info" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+                <a class="footer-info" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -747,44 +732,28 @@
           <ul class="footer-social-network">
             <li>
               <a class="footer-social-list" href="">
-                <svg
-                  class="footer-icon-social"
-                  lang="en"
-                  aria-label="page in instagram"
-                >
+                <svg class="footer-icon-social" lang="en" aria-label="page in instagram">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="footer-social-list" href="">
-                <svg
-                  class="footer-icon-social"
-                  lang="en"
-                  aria-label="page in twitter"
-                >
+                <svg class="footer-icon-social" lang="en" aria-label="page in twitter">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="footer-social-list" href="">
-                <svg
-                  class="footer-icon-social"
-                  lang="en"
-                  aria-label=" page in facebook"
-                >
+                <svg class="footer-icon-social" lang="en" aria-label=" page in facebook">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="footer-social-list" href="">
-                <svg
-                  class="footer-icon-social"
-                  lang="en"
-                  aria-label=" page in linkedin"
-                >
+                <svg class="footer-icon-social" lang="en" aria-label=" page in linkedin">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -799,11 +768,7 @@
             </label>
 
             <button class="footer-submit-btn" type="submit">
-              Підписатися<svg
-                class="footer-submit-btn-icon"
-                height="24"
-                width="24"
-              >
+              Підписатися<svg class="footer-submit-btn-icon" height="24" width="24">
                 <use href="./images/sprite.svg#icon-footer-send"></use>
               </svg>
             </button>

@@ -30,9 +30,10 @@ address {
 
 button {
   display: block;
-  margin: 0 auto;
+  margin: 0;
   cursor: pointer;
-  border: none;
+  border: 0;
+  padding: 0;
 }
 
 img {
