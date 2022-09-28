@@ -712,12 +712,12 @@
     </main>
     <!-- Подвал -->
     <footer class="footer">
-      <div class="container footer-container-box">
-        <div class="footer-address-box">
-          <a href="./index.html" class="footer-web">Web<span class="footer-studio">Studio</span></a>
-          <address>
-            <ul>
-              <li class="footer-item">
+      <div class="container container--flex">
+        <div class="footer__wrapper-address">
+          <a href="./index.html" class="logo">Web<span class="logo--white">Studio</span></a>
+          <address class="footer__address">
+            <ul class="footer__list">
+              <li class="footer__item">
                 <a
                   class="link-address"
                   href="https://goo.gl/maps/E31LjMS4C6WuwfjZA"
@@ -726,7 +726,7 @@
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="footer-item">
+              <li class="footer__item">
                 <a class="footer-info" href="mailto:info@example.com">info@example.com</a>
               </li>
               <li>
@@ -736,32 +736,44 @@
           </address>
         </div>
         <div>
-          <p class="title-footer">Приєднуйтесь</p>
-          <ul class="footer-social-network">
-            <li>
-              <a class="footer-social-list" href="">
-                <svg class="footer-icon-social" lang="en" aria-label="page in instagram">
+          <p class="sign-up-form__text">Приєднуйтесь</p>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="footer-social__link" href="">
+                <svg
+                  class="social-list__icon--ident-color"
+                  lang="en"
+                  aria-label="page in instagram"
+                >
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="footer-social-list" href="">
-                <svg class="footer-icon-social" lang="en" aria-label="page in twitter">
+            <li class="social-list__item">
+              <a class="footer-social__link" href="">
+                <svg class="social-list__icon--ident-color" lang="en" aria-label="page in twitter">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="footer-social-list" href="">
-                <svg class="footer-icon-social" lang="en" aria-label=" page in facebook">
+            <li class="social-list__item">
+              <a class="footer-social__link" href="">
+                <svg
+                  class="social-list__icon--ident-color"
+                  lang="en"
+                  aria-label=" page in facebook"
+                >
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="footer-social-list" href="">
-                <svg class="footer-icon-social" lang="en" aria-label=" page in linkedin">
+            <li class="social-list__item">
+              <a class="footer-social__link" href="">
+                <svg
+                  class="social-list__icon--ident-color"
+                  lang="en"
+                  aria-label=" page in linkedin"
+                >
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -769,8 +781,8 @@
           </ul>
         </div>
         <div class="box-footer-submit">
-          <p class="title-footer">Підпишіться на розсилку</p>
-          <form class="footer-submit-email">
+          <p class="sign-up-form__text">Підпишіться на розсилку</p>
+          <form class="sign-up-form">
             <label>
               <input class="footer-submit" type="email" placeholder="E-mail" />
             </label>
@@ -784,5 +796,57 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container">
+      <div class="container mobile-menu__container">
+        <button class="mobile-menu__close-btn js-close-menu">
+          <svg class="mobile-menu__close-icon" height="40" width="40">
+            <use href="/images/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link mobile-nav__link--current" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Контакти</a></li>
+        </ul>
+        <ul class="mobile-contact">
+          <li class="mobile-contact__item">
+            <a class="mobile-contact__link mobile-contact__link--indent" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contact__item">
+            <a class="mobile-contact__link" href="malito:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-social">
+          <li class="mobail-social__item">
+            <a
+              class="mobile-social__link mobile-social__link--after"
+              aria-label="instagram"
+              href="#"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobail-social__item">
+            <a class="mobile-social__link mobile-social__link--after" aria-label="twitter" href="#"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobail-social__item">
+            <a class="mobile-social__link mobile-social__link--after" aria-label="facebook" href="#"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobail-social__item">
+            <a class="mobile-social__link" aria-label="linkedin" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
