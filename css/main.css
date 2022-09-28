@@ -250,14 +250,21 @@ li {
     color: var(--current-color);
   }
 }
-.button-box {
+.product-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 354px;
+  height: 100%;
+}
+
+.filter-list {
   display: flex;
   justify-content: center;
   column-gap: 8px;
   margin-bottom: 50px;
 }
 
-.button-section {
+.filter-list__btn {
   background: var(--button-color);
   color: var(--main-color);
   padding: 6px 22px;
@@ -265,17 +272,11 @@ li {
   transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  flex-basis: calc((100% - 60px) / 3);
-}
-
-.gallery-box {
+.product-card__wrapper-content {
   padding: 20px 24px;
   border: 1px solid var(--border-box-gallery);
   border-top: none;
+  flex-grow: 1;
 }
 
 .portfolio-box {
@@ -284,12 +285,12 @@ li {
 }
 
 /* Overley карточки портфолио */
-.gallery-overley-box {
+.product-card__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.gallery-overley-text {
+.product-card__desk {
   position: absolute;
   top: 0;
   left: 0;
@@ -307,7 +308,7 @@ li {
   background-color: var(--gallery-overley-text);
   color: var(--main-light-color);
 }
-.gallery-link:hover .gallery-overley-text, .gallery-link:focus .gallery-overley-text {
+.product-card:hover .product-card__desk, .product-card:focus .product-card__desk {
   transform: translateY(0%);
 }
 
@@ -317,7 +318,7 @@ li {
   line-height: 1.6;
 }
 
-.list-title {
+.product-card__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -326,15 +327,46 @@ li {
   margin-bottom: 4px;
 }
 
-.paragraph {
+.product-card__text {
   font-size: 16px;
   line-height: 1.8;
   color: var(--secondary-color);
 }
 
-.gallery-link:hover,
-.gallery-link:focus {
+.product-card:hover,
+.product-card:focus {
   display: block;
+  box-shadow: 0px 1px 1px var(--shadow-cards-gallery-12), 0px 4px 4px var(--shadow-cards-gallery-06), 1px 4px 6px var(--shadow-cards-gallery-16);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+@media screen and (max-width: 767px) {
+  .filter-list {
+    justify-content: start;
+    width: 326px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+.filter-list__btn--current {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+}
+.filter-list__btn--current:hover, .filter-list__btn--current:focus {
+  background-color: var(--current-color);
+  color: var(--main-light-color);
   box-shadow: 0px 1px 1px var(--shadow-cards-gallery-12), 0px 4px 4px var(--shadow-cards-gallery-06), 1px 4px 6px var(--shadow-cards-gallery-16);
 }
 
