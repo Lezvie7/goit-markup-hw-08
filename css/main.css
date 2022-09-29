@@ -314,22 +314,22 @@ li {
 }
 @media screen and (min-width: 768px) {
   .hero-section {
-    background-image: url(../images/tablet/bg.tab.jpg);
+    background-image: linear-gradient(var(--background-image-hero-04), var(--background-image-hero-04)), url(../images/tablet/bg.tab.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero-section {
-    background-image: url(../images/tablet/bg.tab@2x.jpg);
+    background-image: linear-gradient(var(--background-image-hero-04), var(--background-image-hero-04)), url(../images/tablet/bg.tab@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
-    background-image: url(../images/desktop/bg.pc.jpg);
+    background-image: linear-gradient(var(--background-image-hero-04), var(--background-image-hero-04)), url(../images/desktop/bg.pc.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero-section {
-    background-image: url(../images/desktop/bg.pc@2x.jpg);
+    background-image: linear-gradient(var(--background-image-hero-04), var(--background-image-hero-04)), url(../images/desktop/bg.pc@2x.jpg);
   }
 }
 
