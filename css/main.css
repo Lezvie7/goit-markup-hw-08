@@ -501,6 +501,20 @@ li {
   .footer__wrapper-address {
     margin-right: 70px;
   }
+  .container--flex {
+    display: flex;
+  }
+  .sign-up-form__input {
+    width: 358px;
+    text-align: left;
+  }
+  .sign-up-form {
+    display: flex;
+    align-items: end;
+  }
+  .sign-up-form__label {
+    margin-right: 12px;
+  }
 }
 .filter-list__btn {
   background: var(--button-color);
