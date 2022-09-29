@@ -30,7 +30,6 @@
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
   color: var(--current-color);
-  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
   padding-top: 16px;
@@ -59,6 +58,7 @@
     display: flex;
     align-items: center;
     column-gap: 50px;
+    margin-left: 94px;
   }
 
   .contacts-list {

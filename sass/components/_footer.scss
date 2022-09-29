@@ -164,9 +164,6 @@
   .box-footer-submit {
     margin: 0;
   }
-  .logo {
-    margin-right: 0;
-  }
 }
 
 // @media screen and (min-width: 1199px) {
@@ -186,13 +183,17 @@
   .footer__wrapper-address {
     margin-right: 70px;
   }
-  .logo {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
 }
 
+// .logo {
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+//   margin-right: 93px;
+// }
+
+// .logo {
+//   margin-right: 93px;
+// }
 // .sign-up-form__btn {
 //   display: flex;
 //   justify-content: center;

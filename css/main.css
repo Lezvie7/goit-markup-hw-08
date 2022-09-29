@@ -108,6 +108,10 @@ li {
   padding-top: 60px;
 }
 
+.logo__link {
+  margin-right: 0;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -158,7 +162,6 @@ li {
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   color: var(--current-color);
-  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
   padding-top: 16px;
@@ -186,6 +189,7 @@ li {
     display: flex;
     align-items: center;
     column-gap: 50px;
+    margin-left: 94px;
   }
   .contacts-list {
     display: flex;
@@ -486,9 +490,6 @@ li {
   .box-footer-submit {
     margin: 0;
   }
-  .logo {
-    margin-right: 0;
-  }
 }
 @media screen and (min-width: 768px) {
   .sign-up-form__input {
@@ -499,11 +500,6 @@ li {
 @media screen and (min-width: 1200px) {
   .footer__wrapper-address {
     margin-right: 70px;
-  }
-  .logo {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
   }
 }
 .filter-list__btn {
