@@ -104,10 +104,6 @@ li {
   padding-top: 0%;
 }
 
-.section-total {
-  padding-top: 60px;
-}
-
 .logo__link {
   margin-right: 0;
 }
@@ -886,6 +882,12 @@ li {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1199px) {
+  .portfolio-box {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
