@@ -133,3 +133,21 @@
     width: 360px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 767px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+  }
+}
+
+.hero {
+  max-width: 479px;
+  height: 400px;
+}
