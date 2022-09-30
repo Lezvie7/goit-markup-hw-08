@@ -1,3 +1,8 @@
+.hero {
+  max-width: 479px;
+  height: 400px;
+}
+
 .hero__btn {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -145,9 +150,4 @@
     max-width: 1600px;
     height: 600px;
   }
-}
-
-.hero {
-  max-width: 479px;
-  height: 400px;
 }

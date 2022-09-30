@@ -255,6 +255,11 @@ li {
     color: var(--current-color);
   }
 }
+.hero {
+  max-width: 479px;
+  height: 400px;
+}
+
 .hero__btn {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -358,11 +363,6 @@ li {
     height: 600px;
   }
 }
-.hero {
-  max-width: 479px;
-  height: 400px;
-}
-
 .our-features {
   display: flex;
   gap: 30px;
