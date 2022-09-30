@@ -635,7 +635,6 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 92px;
   border: 1px solid var(--icon-social-network);
   border-radius: 4px;
@@ -651,10 +650,6 @@ li {
   background: var(--footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer__wrapper-address {
-  text-align: center;
 }
 
 .logo--white {
@@ -747,13 +742,16 @@ li {
   border-color: var(--current-color);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .sign-up-form__btn {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
   }
   .sign-up-form__text {
+    text-align: center;
+  }
+  .footer__wrapper-address {
     text-align: center;
   }
 }

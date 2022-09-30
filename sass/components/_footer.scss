@@ -4,9 +4,9 @@
   padding-bottom: 60px;
 }
 
-.footer__wrapper-address {
-  text-align: center;
-}
+// .footer__wrapper-address {
+//   text-align: center;
+// }
 
 .logo--white {
   color: var(--main-light-color);
@@ -107,13 +107,16 @@
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .sign-up-form__btn {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
   }
   .sign-up-form__text {
+    text-align: center;
+  }
+  .footer__wrapper-address {
     text-align: center;
   }
 }
