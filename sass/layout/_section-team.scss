@@ -30,13 +30,19 @@
   text-align: center;
 }
 
-@media screen and (min-width: 767px) {
-  .cards-team {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+.cards-team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
+
+// @media screen and (min-width: 768px) {
+//   .cards-team {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 30px;
+//   }
+// }
 
 @media screen and (min-width: 768px) {
   .cards-team {
@@ -50,6 +56,11 @@
   }
 }
 
+// .cards-team {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 30px;
+// }
 //   }
 // }
 

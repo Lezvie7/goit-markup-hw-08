@@ -161,11 +161,17 @@
     max-width: 354px;
     height: 100%;
   }
-  .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+  // .portfolio-list {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   gap: 30px;
+  // }
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 // .filter-list__btn {
