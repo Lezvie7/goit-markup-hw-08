@@ -662,7 +662,7 @@ li {
 .backdrop {
   position: fixed;
   top: 0;
-  width: 0;
+  left: 0;
   z-index: 100;
   width: 100%;
   height: 100%;
@@ -676,11 +676,16 @@ li {
   left: 50%;
   padding: 40px;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 580px;
+  width: 450px;
+  height: 609px;
   background-color: var(--main-light-color);
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 320px;
+  }
+}
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -702,7 +707,7 @@ li {
 .modal-form-title {
   display: block;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -735,7 +740,7 @@ li {
   border: 2px solid var(--complementary-2-color);
   border-radius: 2px;
   cursor: pointer;
-  margin-right: 9px;
+  margin-right: 8px;
 }
 .contact-form-check:checked + .form-checkbox-icon {
   background-color: var(--current-color);
@@ -756,6 +761,7 @@ li {
 .form-checkbox-link {
   color: var(--current-color);
   text-decoration-line: underline;
+  font-size: 12px;
 }
 
 .contact-form-check-field {
@@ -833,15 +839,26 @@ li {
   color: var(--secondary-color);
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .modal {
-    width: 450px;
-  }
+.form-checkbox-policy {
+  font-size: 12px;
 }
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
+  }
+  .modal-form-title {
+    margin-bottom: 12px;
+  }
+  .form-checkbox-policy {
+    font-size: 14px;
+  }
+  .form-checkbox-link {
+    font-size: 14px;
+  }
+  .form-checkbox-won-icon {
+    margin-right: 9px;
   }
 }
 .filter-list__btn {
@@ -982,7 +999,6 @@ li {
     z-index: 100;
     width: 100%;
     height: 100%;
-    padding-top: 40px;
     background-color: var(--main-light-color);
     opacity: 0;
     visibility: hidden;
@@ -992,6 +1008,7 @@ li {
   .mobile-menu__container {
     position: relative;
     padding-left: 40px;
+    padding-top: 40px;
   }
   .mobile-menu__close-btn {
     position: absolute;
