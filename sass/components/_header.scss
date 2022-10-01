@@ -120,6 +120,9 @@
     .contacts-list {
       flex-direction: row;
     }
+    .contacts-list .contacts-list__item + .contacts-list__item {
+      margin-left: 50px;
+    }
   }
 
   .current-link::before {

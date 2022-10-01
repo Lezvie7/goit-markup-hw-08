@@ -15,10 +15,14 @@
   }
 
   .mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     position: relative;
     padding-left: 40px;
     padding-top: 48px;
-    padding-bottom: 48px;
+    // padding-bottom: 48px;
+    padding-bottom: 30px;
   }
 
   .mobile-menu__close-btn {
@@ -73,10 +77,16 @@
 
 // mobail-contact
 
-.mobile-contact {
-  margin-top: 302px;
-  @media screen and (min-width: 480px) {
-    margin-top: 302px;
+// .mobile-contact {
+//   margin-top: auto;
+//   @media screen and (min-width: 480px) {
+//     margin-top: auto;
+//   }
+// }
+
+@media screen and (min-width: 480px) {
+  .mobile-contact {
+    margin-top: auto;
   }
 }
 
