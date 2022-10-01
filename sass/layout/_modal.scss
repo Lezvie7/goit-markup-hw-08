@@ -196,18 +196,6 @@
   font-size: 12px;
 }
 
-// @media screen and (max-width: 479px) {
-//   .modal {
-//     width: 320px;
-//   }
-// }
-
-// @media screen and (min-width: 480px) and (max-width: 1199px) {
-//   .modal {
-//     width: 450px;
-//   }
-// }
-
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -226,17 +214,3 @@
     margin-right: 9px;
   }
 }
-
-// .modal-form-title {
-//     margin-bottom: 10px; (12рх для декстопа)
-// }
-// .form-checkbox-policy {
-//     font-size: 12px; (14рх для декстопа)
-// }
-// .form-checkbox-link {
-//     font-size: 12px; (14рх для декстопа)
-// }
-
-// .form-checkbox-icon {
-//     margin-right: 8px; (9рх для декстопа)
-// }

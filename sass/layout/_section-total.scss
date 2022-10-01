@@ -25,10 +25,6 @@
   color: var(--main-light-color);
 }
 
-// .projects {
-//   display: none;
-// }
-
 // Скрывает секцию до ПК версии.
 @media screen and (max-width: 1200px) {
   .projects {
