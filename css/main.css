@@ -1196,6 +1196,7 @@ li {
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 30px;
+    overflow: scroll;
   }
   .mobile-menu__close-btn {
     position: absolute;
