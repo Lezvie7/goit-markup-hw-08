@@ -85,6 +85,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 a {
@@ -363,7 +365,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 767px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1332,4 +1334,8 @@ li {
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
   }
+}
+
+.mobile-nav {
+  margin-bottom: auto;
 }/*# sourceMappingURL=main.css.map */
