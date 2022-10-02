@@ -28,7 +28,7 @@
 
 .product-card:hover,
 .product-card:focus {
-  display: block;
+  // display: block;
   box-shadow: 0px 1px 1px var(--shadow-cards-gallery-12), 0px 4px 4px var(--shadow-cards-gallery-06),
     1px 4px 6px var(--shadow-cards-gallery-16);
 }
