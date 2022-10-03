@@ -28,7 +28,6 @@
 
 .product-card:hover,
 .product-card:focus {
-  // display: block;
   box-shadow: 0px 1px 1px var(--shadow-cards-gallery-12), 0px 4px 4px var(--shadow-cards-gallery-06),
     1px 4px 6px var(--shadow-cards-gallery-16);
 }
@@ -101,7 +100,7 @@
   padding-bottom: 63px;
   padding-left: 24px;
   font-size: 18px;
-  overflow: auto;
+  // overflow: auto;
   line-height: 1.5;
   transform: translateY(101%);
   transition: transform var(--transition-dur-and-func);
